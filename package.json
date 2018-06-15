@@ -1,0 +1,17 @@
+{
+  "name": "terminal-world-cup",
+  "version": "1.0.0",
+  "description": "Displays world cup games results into terminal",
+  "main": "index.js",
+  "author": "Celso Henrique",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "node-fetch": "^2.1.2"
+  }
+}
