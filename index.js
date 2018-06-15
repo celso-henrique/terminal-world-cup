@@ -9,7 +9,7 @@ app.get('/', async (req, res) => {
   const dataRequest = await fetch('http://worldcup.sfg.io/matches');
   const json = await dataRequest.json();
 
-  const data = _.filter(json, game => game.status === 'completed');
+  const data = _.filter(json, game => game.status !== 'future');
   const result = new Table({
     head: ['Home team', 'Goals', 'VS', 'Goals', 'Away team']
   });
