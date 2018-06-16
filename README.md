@@ -3,7 +3,8 @@ Terminal World Cup
 
 Displays world cup games results into terminal using Node.js, Express and this public [World Cup api](http://worldcup.sfg.io/).
 
-To see the World Cup results, just curl into your terminal:
+# Public web service
+To see the World Cup results, just run this command into your terminal:
 ```sh
 $ curl "ec2-18-222-133-46.us-east-2.compute.amazonaws.com"
 ```
@@ -26,6 +27,7 @@ And curl your localhost:
 ```sh
 $ curl localhost:80
 ```
+
 
 
 
