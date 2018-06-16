@@ -9,22 +9,29 @@ app.get('/', async (req, res) => {
   const dataRequest = await fetch('http://worldcup.sfg.io/matches');
   const json = await dataRequest.json();
 
-  const data = _.filter(json, game => game.status !== 'future');
   const result = new Table({
-    head: ['Home team', 'Goals', 'VS', 'Goals', 'Away team']
+    head: ['Home team', 'Goals', 'Goals', 'Away team', 'Status']
   });
 
-  _.forEach(data, game => {
+  _.forEach(_.filter(json, game => game.status !== 'future'), game => {
     result.push([
       game.home_team.country,
       game.home_team.goals,
-      '',
       game.away_team.goals,
-      game.away_team.country
+      game.away_team.country,
+      game.status
     ]);
   });
 
-  res.send(`${result.toString()}\n`);
+  res.send(
+    `
+${result.toString()}
+
+Developed by Celso Henrique, for suggestions or improvements, please access:
+https://github.com/celso-henrique/terminal-world-cup
+
+`
+  );
 });
 
 app.listen(80, () => {
