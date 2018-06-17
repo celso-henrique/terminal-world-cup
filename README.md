@@ -9,7 +9,7 @@ To see the World Cup results, just run this command into your terminal:
 $ curl "ec2-18-222-133-46.us-east-2.compute.amazonaws.com"
 ```
 
-# Running localy
+# Running locally
 Clone this repository and install its dependencies:
 
 ```sh
