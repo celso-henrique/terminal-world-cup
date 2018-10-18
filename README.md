@@ -28,6 +28,6 @@ And curl your localhost:
 $ curl localhost:80
 ```
 
-### License
+# License
 
 This project is [MIT licensed](./LICENSE).
