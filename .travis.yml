@@ -1,11 +1,9 @@
 sudo: required
 
-language: javascript
-
 services:
   - docker
 
-before_install:
+script:
   - docker build -t celsohsilva/terminalworldcup .
 
 deploy:
