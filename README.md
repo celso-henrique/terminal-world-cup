@@ -7,7 +7,7 @@ Displays world cup games results into terminal using [Node.js](https://nodejs.or
 # Public service
 To see the World Cup results, just run this command into your terminal:
 ```sh
-$ curl "dockerterminalworldcup-env.apnj9mn7zk.us-east-2.elasticbeanstalk.com"
+$ curl "terminalworldcup.tk"
 ```
 
 # Running locally
