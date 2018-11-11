@@ -1,5 +1,6 @@
 Terminal World Cup
 ====================
+[![Build Status](https://travis-ci.org/celso-henrique/terminal-world-cup.svg?branch=master)](https://travis-ci.org/celso-henrique/terminal-world-cup)
 
 Displays world cup games results into terminal using [Node.js](https://nodejs.org/), [Express](http://expressjs.com/) and this public [World Cup api](http://worldcup.sfg.io/).
 
