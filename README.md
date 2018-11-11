@@ -13,7 +13,7 @@ $ curl "dockerterminalworldcup-env.apnj9mn7zk.us-east-2.elasticbeanstalk.com"
 # Running locally
 With docker installed just run the image:
 ```sh
-$ docker run celsohsilva/terminalworldcup
+$ docker run -p 80:80 celsohsilva/terminalworldcup
 ```
 
 And curl your localhost:
