@@ -4,12 +4,6 @@ Terminal World Cup
 
 Displays world cup games results into terminal using [Node.js](https://nodejs.org/), [Express](http://expressjs.com/) and this public [World Cup api](http://worldcup.sfg.io/).
 
-# Public service
-To see the World Cup results, just run this command into your terminal:
-```sh
-$ curl "terminalworldcup.tk"
-```
-
 # Running locally
 With docker installed just run the image:
 ```sh
