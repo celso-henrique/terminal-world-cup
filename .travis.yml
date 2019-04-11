@@ -11,14 +11,3 @@ deploy:
     script: bash docker_push
     on:
       branch: master
-  - provider: elasticbeanstalk
-    region: "us-east-2"
-    app: "docker-terminal-world-cup"
-    env: "DockerTerminalWorldCup-env"
-    bucket_name: "elasticbeanstalk-us-east-2-461980213583"
-    bucket_path: "docker-terminal-world-cup"
-    on:
-      branch: master
-    access_key_id: "$AWS_ACCESS_KEY"
-    secret_access_key:
-      secure: "$AWS_SECRET_KEY"
