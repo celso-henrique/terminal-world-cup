@@ -1,19 +1,20 @@
 const fetch = require('node-fetch');
 const express = require('express');
 const Table = require('cli-table');
-const _ = require('lodash');
 
 const app = express();
 
 app.get('/', async (req, res) => {
   const dataRequest = await fetch('http://worldcup.sfg.io/matches');
-  const json = await dataRequest.json();
+  const games = await dataRequest.json();
 
   const result = new Table({
     head: ['Home team', 'Goals', 'Goals', 'Away team', 'Status']
   });
 
-  _.forEach(_.filter(json, game => game.status !== 'future'), game => {
+  const pastAndPresentGames = games.filter(game => game.status !== 'future');
+
+  pastAndPresentGames.forEach(game => {
     result.push([
       game.home_team.country,
       game.home_team.goals,
